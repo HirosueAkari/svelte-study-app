@@ -1,6 +1,8 @@
-<button on:click={clickBtn}>ボタン</button>
+<button on:click={clickBtn}>{btnLabel}</button>
 
 <script lang="ts">
+export let btnLabel: string
+
 function clickBtn() {
   alert('ボタンクリック')
 }

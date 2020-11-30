@@ -4,7 +4,7 @@
     <div>
       <input type="text" class="input" placeholder="E-mail">
       <input type="password" class="input" placeholder="Password">
-      <Button />
+      <Button btnLabel={"LOGIN"} />
     </div>
   </div>
 </main>

@@ -4,7 +4,7 @@
   import Login from './components/pages/Login.svelte'
 
   const routes: any = {
-    '/': Home,
+    '/home': Home,
     '/login': Login
   }
 </script>

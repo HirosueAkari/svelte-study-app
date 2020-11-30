@@ -4,12 +4,17 @@
     <div>
       <input type="text" class="input" placeholder="E-mail">
       <input type="password" class="input" placeholder="Password">
-      <Button btnLabel={"LOGIN"} />
+      <Button btnLabel={"LOGIN"} on:clickBtn={clickBtn} />
     </div>
   </div>
 </main>
 <script lang="ts">
+import { push } from 'svelte-spa-router'
 import Button from '../atoms/Button.svelte'
+
+function clickBtn () {
+  push('/home')
+}
 </script>
 <style lang="scss">
 .input {

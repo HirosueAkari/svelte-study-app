@@ -2,9 +2,12 @@
 
 <script lang="ts">
 export let btnLabel: string
+import { createEventDispatcher } from 'svelte'
+
+const dispatch = createEventDispatcher()
 
 function clickBtn() {
-  alert('ボタンクリック')
+  dispatch('clickBtn')
 }
 </script>
 <style lang="scss">
